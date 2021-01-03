@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+/*header*/
+header {
+  background-color: white;
+  justify-content: space-around;
+  left: 0;
+  right: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 10px;
+  box-shadow: 0 0 2px rgba(33,33,33,.2); 
+}
+/*navbar*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1%;
+}
+nav a {
+  text-decoration: none;
+  color: gray;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  justify-content: space-between;
+  margin-right: 10px;
+}
+nav ul li a:hover{
+  color: #00b39b;
+}
+nav ul ul {
+  display: none;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  width: 150%;
+  padding: 20px;
+  line-height: 180%;
+  position: absolute;
+  background-color: white;
+}
+nav ul li:hover > ul {
+  display: list-item;
+}
+nav ul ul li a:hover {
+  color: #00b39b;
+}
+nav ul ul li:hover {
+  background-color: ghostwhite;
+}
+/* health-intro CSS */
+.health-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 10%;
+}
+.health-intro h1 {
+  font-size: 2.125rem;
+  font-weight: 100;
+  margin-top: 3%;
+  color: #00b39b;
+}
+.health-intro div {
+  display: flex;
+}
+.health-intro div p {
+  padding: 3%;
+  line-height: 1.75;
+  color: gray;
+  font-size: 20px;
+}
+/*health services section*/
+.health-services {
+  margin: 2% 13%;
+  margin-top: -5%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.health-services .container h2{
+  color: white;
+  font-weight: 600;
+}
+.patients {
+  background-color: #00ccb1;
+  border-radius: 10px;
+  width: 30%;
+  height: 300px;
+}
+.doctors {
+  background-color: royalblue;
+  border-radius: 10px;
+  width: 30%;
+  height: 300px;
+}
+.clinics {
+  background-color: darkblue;
+  border-radius: 10px;
+  width: 30%;
+  height: 300px;
+}
+.container img {
+  margin-left: 8%;
+  margin-top: 5%;
+}
+.container h2 {
+  margin-left: 8%;
+  color: white;
+}
+.container h3 {
+  margin-left: 8%;
+  color: white;
+  font-size: 20px;
+  margin-top: 4%;
+  font-weight: 100;
+}
+.container select {
+  margin-left: 8%;
+  margin-top: 20%;
+  flex-wrap: wrap;
+  color: white;
+  border-color: transparent transparent #fff transparent;
+  background-color: transparent;
+  font-size: 18px;
+}
+select option {
+  background-color: white;
+}
+select option:hover {
+  background-color: #00ccb1;
+}
+.specialists select {
+  margin-top: 6%;
+}
+.clinics:hover {
+  opacity: 0.8;
+}
+.doctors:hover {
+  opacity: 0.8;
+}
+.patients:hover {
+  opacity: 0.8;
+}
+/*health brands section*/
+.health-brands {
+  margin: 2% 13%;
+  display: flex;
+}
+.health-brands h3 {
+  color: #00b39b;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  letter-spacing: 0.3px;
+  width: 45%;
+}
+.health-brands .container {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-left: 20px;
+}
+.health-brands svg {
+  fill: darkgray;
+  width: 60%;
+}
+.health-brands svg:hover {
+  fill: #00ccb1;
+}
+/*.healthcare-platform section*/
+.healthcare-platform {
+  background-image: linear-gradient(
+    -45deg,
+    rgba(0, 204, 177, 0.01) 5%,
+    rgba(61, 199, 223, 0.1)
+  );
+  background: #e5faf8;
+  padding: 8%;
+  display: flex;
+}
+.healthcare-platform .container {
+  margin: 2% 12%;
+  flex-wrap: wrap;
+}
+.healthcare-offices {
+  margin: 2% 8%;
+  z-index: 1;
+}
+.countries {
+  background-color: white;
+  box-sizing: border-box;
+  width: 50%;
+  height: 70%;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  top: -20%;
+  left: -5%;
+}
+.unique-patients {
+  background-color: white;
+  box-sizing: border-box;
+  width: 50%;
+  height: 60%;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  top: -30%;
+  left: 0%;
+}
+.active-doctors {
+  background-color: white;
+  box-sizing: border-box;
+  width: 50%;
+  height: 60%;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 3%;
+  position: relative;
+  top: -15%;
+  left: -5%;
+
+}
+.appoinments {
+  background-color: white;
+  box-sizing: border-box;
+  width: 47%;
+  height: 60%;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  top: -35%;
+  left: -2%;
+}
+.appoinments h4{
+  margin-top: 10px;
+}
+.countries h4{
+  margin-top: 10px;
+}
+.active-doctors{
+  margin-top: 10px;
+}
+.unique-patients h4{
+  margin-top: 10px;
+}
+/*healthcare offices section*/
+.healthcare-offices h2 {
+  text-align: left;
+  color: #00b39b;
+  font-weight: 100;
+  font-size: 28px;
+  width: 160%;
+}
+.healthcare-offices h3 {
+  color: gray;
+  font-size: 15px;
+  width: 160%;
+  font-weight: 600;
+}
+.container h2 {
+  color: #00b39b;
+  font-weight: 100;
+  font-size: 20px;
+}
+.container h4 {
+  font-weight: 100;
+  color: gray;
+}
+.backimg img{
+  overflow: hidden;
+  width: 22%;
+  position: absolute;
+  margin-top: 12.5%;
+  z-index: 0;
+}
+/*live improvement section*/
+.live-improvement {
+  text-align: center;
+  margin-top: 7%;
+}
+.live-improvement h2 {
+  margin: 2% 20%;
+  color: #00b39b;
+}
+.live-improvement h3 {
+  margin: 2% 30%;
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+/*country health section*/
+.country-health {
+  margin: 2% 12%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.country-health div{
+    margin-top: 3%;
+    padding: 10px;
+}
+.country-health div:hover{
+  cursor: pointer;
+}
+.cities {
+  display: flex;
+  justify-content: space-between;
+}
+.country-health button {
+  background-color: blue;
+  border: none;
+  padding: 2%;
+  font-size: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.country-health div:hover{ 
+  box-shadow: 0 0 15px rgba(33,33,33,.2); 
+}
+/*join-us section*/
+.join-us {
+  margin: 2% 12%;
+}
+.join-us h2 {
+  text-align: center;
+}
+.join-us button {
+  border: none;
+  border-radius: 3px;
+  background-color: blue;
+  color: white;
+  padding: 1%;
+ position: relative;
+ left: 40%;
+ margin-top: 3%;
+}
+.join-us button:hover{
+  opacity: 0.8;
+}
+/*footer section*/
+.main-footer{
+    margin: 2% 12%;
+}
+.main-footer p{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+.main-footer h4{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2%;
+}
+.main-footer h5{
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 2%;
+}
